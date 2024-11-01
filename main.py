@@ -19,7 +19,7 @@ users_db: Dict[str, str] = {}
 class User(BaseModel):
     username: str
     password: str
-
+#endpoints
 @app.post("/signup")
 def signup(user: User):
     if user.username in users_db:

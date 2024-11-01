@@ -33,4 +33,4 @@ def login(user: User):
         raise HTTPException(status_code=400, detail="Credenciais incorretas")
     return {"message": "Login bem-sucedido!"}
 
-##uvicorn main:app --reload
+#uvicorn main:app --reload
